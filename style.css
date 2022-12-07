@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Home Page Content*/
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./imagesw/images.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  animation: change 6s infinite ease-in-out;
+}
+.nav1 {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px #aaa;
+}
+.navbar {
+  width: 90%;
+  height: 70%;
+  padding: 10px;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 300px;
+  height: 80px;
+  margin-top: 20px;
+
+  cursor: pointer;
+  margin-left: 50px;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  margin-top: 10px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #ff0000;
+  position: absolute;
+  left: -1;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.content h1 {
+  font-size: 40px;
+  margin-top: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.content a {
+  background: #ff0000;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 25px;
+  font-weight: 800px;
+  color: aliceblue;
+}
+.content a:hover {
+  opacity: 0.5;
+  color: #fff;
+}
+
+/*Page 2 Content*/
+.banner2 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.04);
+  background-size: cover;
+  background-position: center;
+}
+.mainh {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainh h3 {
+  font-size: 2rem;
+}
+.mainh p {
+  font-size: 1.6rem;
+  color: #555;
+}
+.mainh .imagediv {
+  flex: 1 1 400px;
+  padding: 30px;
+}
+.mainh .text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+}
+.imagediv img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.video {
+  max-width: 1200px;
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  margin-top: 40px;
+}
+.video iframe {
+  height: 100%;
+  width: 100%;
+}
+/*Page 3 Content*/
+.banner3 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.04);
+  background-size: cover;
+  background-position: center;
+}
+.upper {
+  max-width: 1200px;
+  /* width: 90%; */
+  padding: 1rem;
+  margin: auto;
+}
+.upper .img-1 {
+  width: 100%;
+  display: flex;
+}
+.upper p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.upper .img-1 img {
+  height: 300px;
+  width: 300px;
+  flex: 1 1 600px;
+  padding: 2px;
+}
+.lower .img-1 img {
+  height: 300px;
+  width: 300px;
+  flex: 1 1 600px;
+  padding: 2px;
+}
+.lower p {
+  font-size: 1.2rem;
+}
+
+/*Page 4 Content*/
+.banner4 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.04);
+  background-size: cover;
+  background-position: center;
+}
+.con p {
+  font-size: 1.2rem;
+  color: #555;
+}
+.con ul li {
+  font-size: 1.2rem;
+}
+
+/* Sign In */
+
+.formcontainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.formcontainer h2 {
+  color: grey;
+  text-align: center;
+  margin: 80px 0px 40px 0px;
+}
+
+.app-wrapper {
+  background-color: #fff;
+  min-width: 350px;
+  min-height: 650px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.form-field {
+  margin: 20px;
+  color: #969292;
+  font-size: 16px;
+}
+
+.input {
+  height: 32px;
+  font-size: 20px;
+  outline: none;
+  width: 90%;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: 2x solid black;
+  margin-bottom: 10px;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.error {
+  color: red;
+}
+
+.submit {
+  display: flex;
+  padding: 10px 60px;
+  margin: auto;
+  border-radius: 25px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: grey;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.submit:hover span {
+  width: 100%;
+}
+.submit:hover {
+  border: none;
+}
+
+.bottom-text {
+  padding: 1rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.bottom-text:hover {
+  cursor: default;
+}
+
+.form-banner {
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(images/background.jpg);
+}
+
+@keyframes change {
+  0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./imagesw/240_F_132224931_mYX4RFeCXbIKiAzyJdG74MzzGyHqExgq.jpg);
+  }
+  20% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./imagesw/istockphoto-1171248030-612x612.jpg);
+  }
+  40% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./imagesw/images.jpeg);
+  }
+  60% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./imagesw/istockphoto-182167532-612x612.jpg);
+  }
+  80% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./imagesw/istockphoto-1267045601-612x612.jpg);
+  }
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./imagesw/240_F_132224931_mYX4RFeCXbIKiAzyJdG74MzzGyHqExgq.jpg);
+  }
+}
